@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex; justify-content: center; align-items: center; ">
+        <div style="border: 2px solid black; background-color:pink; width:fit-content; padding:30px">
+            <form action="/action">
+                <label for="phone">Enter your Phn no</label><br>
+                <input type="number" required placeholder="enter your phn no" id="phone" > <br><BR></BR>
+                <label for="additional">Add any comment</label><br>
+                <textarea name="comment" id="additional" rows="7" cols="50"></textarea><br><br>
+                <label for="password">Enter your Password</label><br>
+                <input type="password" required placeholder="password" id="password" pattern=".{8,}" > <br>
+                <small>(password should be min of 8 letter)</small><br><br>
+                <button type="submit" style="padding: 5px; border-radius: 5%;">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- add  validation to ensure your passsword is atleast 8 charcates long using the pattern attribute  -->
