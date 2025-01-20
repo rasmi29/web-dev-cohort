@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>This is a video</h2>
+    <video src="./Hero Section Video.mp4" controls width="600" height="400" autoplay loop poster="./video.html">
+        <track 
+            label="English" 
+            kind="subtitles" 
+            srclang="en" 
+            src="./a.vtt"
+            default
+        >
+    </video>
+</body>
+</html>
+
+<!-- poster means Shows this image before video plays -->
+ <!-- loop means Video will replay when finished -->
+  <!-- autoplay menas video starts play automatically after loading  -->
+   <!-- muted means video will be muted by default -->
+    <!-- controls means video will have controls like play, pause, volume, etc. -->
+     <!-- width and height are for size of video -->
+
+
+ <!-- The <track> tag attributes explained:
+
+label: The title of the subtitle track that users will see
+kind: Type of track ("subtitles", "captions", "descriptions", "chapters", or "metadata")
+srclang: Language of the subtitles (use language codes like "en", "es", "fr")
+src: Path to your .vtt file
+default: Makes these subtitles show by default -->
