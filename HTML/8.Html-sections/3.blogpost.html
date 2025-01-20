@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            height: 100vh;
+            background-color: #D0DDD0;
+        }
+        #main{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            padding-left: 5%;
+            padding-right: 14%;
+            align-items: center;
+            background-color: #F0F0D7;
+            color: #441752;
+        }
+        footer{
+            position: absolute;
+            text-align: center;
+            background-color: #F0F0D7;
+            color: #441752;
+            font-size: small;
+            font-weight: bold;
+            bottom: 0;
+            width: 100%;
+        }
+        article{
+            padding: 20px 160px;
+            background-color: #D0DDD0;
+            
+        }
+        nav{
+            display: flex;
+            gap: 30px;
+        }
+        .nav-a{
+            text-decoration: none;
+            color: #064a61;
+        }
+        .nav-a:hover{
+            text-decoration: none;
+            color: #727D73;
+        }
+        #title{
+            font-size:xx-large;
+            background-color: #AAB99A;
+            width: fit-content;
+            padding: 7px 15px;
+            border-radius: 15px;
+            color: #441752;
+            margin-bottom: 5%;
+        }
+        li{
+            margin-bottom: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <header>
+            <h1>Blog-Project</h1>
+            <nav class="anchor">
+                <div><a class="nav-a" href="#">Home</a></div>
+                <div><a class="nav-a" href="#">About</a></div>
+                <div><a class="nav-a" href="#">Contact</a></div>
+                <div><a class="nav-a" href="#">Post-blog</a></div>
+                
+            </nav>
+        </header>
+        <article>
+            <center><h2 id="title">Welcome to the Blog-Project</h2></center>
+            <h2>What is HTML ?</h2>
+
+            <p>HTML (HyperText Markup Language) is the standard language used to create and structure content on the web. It is the foundation of all web pages, providing the basic structure for text, images, links, and other elements. HTML is made up of elements that define the structure of the content, such as headings, paragraphs, lists, tables, and more.</p>
+
+            <h2>Key Features of HTML:</h2>
+
+            <ul>
+                
+                <li><strong>Elements & Tags:</strong>HTML uses elements, which are enclosed in angle brackets (< >). For example,  for the main heading h1 , p for a paragraph, and a for links. Each element has an opening and a closing tag</li>
+                <li><strong>Attributes:</strong>HTML elements can have attributes, which provide additional information about an element. For example, the src attribute specifies the source of an image in the .</li>
+                <li><strong>Semantic HTML:</strong>HTML5 introduced semantic elements like header, footer, article, and section, which help improve the structure and accessibility of a webpage.</li>
+                <li><strong>Links and Navigation:</strong>
+                HTML enables the creation of hyperlinks using the <a> tag, allowing users to navigate from one page to another or to different parts of a page.
+                </li>
+            </ul>
+            
+            <p>Author: Rasmi</p>
+            <p style="margin-bottom: 80px;">Date: 20th January, 2025</p>
+        </article>
+        <footer>
+            <p>&copy; 2025 Blog Project. All Rights Reserved.</p>
+            <p>Designed and Developed by Rasmi with ❤️</p>
+        </footer>
+    </div>
+</body>
+</html>
