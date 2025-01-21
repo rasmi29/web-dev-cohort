@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Formats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+            background-color: #f5f5f5;
+        }
+
+        h2 {
+            color: #1c1e20;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0.1, 0.1, 0.4, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            color: #555;
+        }
+
+        tr:hover {
+            background-color: #dfe0e1;
+        }
+
+        tr td:nth-child(2) {
+            font-weight: bold;
+        }
+
+        tr td:nth-child(2)[text="Video"] {
+            color: #e74c3c;
+        }
+
+        tr td:nth-child(2)[text="Audio"] {
+            color: #27ae60;
+        }
+
+        
+        tr td:first-child {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Media Format Guide</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Format</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>MP4</td>
+                <td text="Video">Video</td>
+                <td>Most widely supported format for video content. Can play on almost all devices.</td>
+            </tr>
+            <tr>
+                <td>WEBM</td>
+                <td text="Video">Video</td>
+                <td>A modern, open video format that is compatible with Chrome, Firefox, and Safari.</td>
+            </tr>
+            <tr>
+                <td>AVI</td>
+                <td text="Video">Video</td>
+                <td>A widely used format for video content, but is no longer recommended for its larger size.</td>
+            </tr>
+            <tr>
+                <td>MKV</td>
+                <td text="Video">Video</td>
+                <td>A widely supported format for video content, including support for audio and subtitles.</td>
+            </tr>
+            <tr>
+                <td>MP3</td>
+                <td text="Audio">Audio</td>
+                <td>An audio format, commonly used for music and sound effects.</td>
+            </tr>
+            <tr>
+                <td>OGG</td>
+                <td text="Audio">Audio</td>
+                <td>An open format for audio files, with support for various codecs, including Vorbis.</td>
+            </tr>
+            <tr>
+                <td>WAV</td>
+                <td text="Audio">Audio</td>
+                <td>An uncompressed audio format with high quality sounds, commonly used for sound effects and voice recordings.</td>
+            </tr>
+            <tr>
+                <td>FLAC</td>
+                <td text="Audio">Audio</td>
+                <td>A lossy audio format, commonly used for music and sound effects.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

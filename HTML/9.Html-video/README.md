@@ -125,3 +125,18 @@ The `<iframe>` tag in HTML is used to embed external content, such as videos, in
 - Ensures proper integration with external services like YouTube.
 
 For more details, check the [MDN Web Docs on `<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe).
+
+# Common Video and Audio Formats
+
+Here is a table listing three common video and audio formats along with their descriptions:
+
+| Format      | Type   | Description                                                                 |
+|-------------|--------|-----------------------------------------------------------------------------|
+| **MP4**     | Video  | A highly versatile video format widely supported across devices and browsers.|
+| **WebM**    | Video  | An open-source format designed for web streaming with high compression.      |
+| **AVI**     | Video  | A classic video format with high-quality but larger file sizes.              |
+| **MP3**     | Audio  | The most popular audio format, known for its high compression and quality.   |
+| **OGG**     | Audio  | Open-source audio format with good quality and modern browser support.       |
+| **WAV**     | Audio  | Uncompressed audio format with high-quality sound, suitable for editing.     |
+
+This table provides an overview of commonly used formats, highlighting their purpose and key characteristics.
