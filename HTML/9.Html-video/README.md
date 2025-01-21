@@ -45,3 +45,83 @@ The `<track>` tag is used to specify text tracks for `<video>` and `<audio>` ele
   <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English" default>
   Your browser does not support the video tag.
 </video>
+```
+# HTML `<audio>` Tag
+
+The `<audio>` tag in HTML is used to embed audio content in web pages. It provides a simple way to include audio files that can be played directly in the browser without the need for additional plugins.
+
+## Features of the `<audio>` Tag
+- Supports multiple audio formats, such as MP3 and OGG.
+- Provides controls for play, pause, volume, and more.
+- Allows advanced functionalities like autoplay, looping, and preloading.
+
+## How to Use the `<audio>` Tag
+
+Here is an example of using the `<audio>` tag to play two types of audio formats, MP3 and OGG:
+
+```html
+<audio controls>
+    <source src="example-audio.mp3" type="audio/mpeg">
+    <source src="example-audio.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+</audio>
+```
+
+### Explanation
+1. **`<audio controls>`**: Adds a built-in control panel for play, pause, and volume.
+2. **`<source>` Tag**: Specifies the audio file and its type.
+   - The browser will use the first supported format (e.g., MP3 or OGG).
+3. **Fallback Text**: The text inside the `<audio>` tag is displayed if the browser does not support the element.
+
+## Audio Formats
+- **MP3 (audio/mpeg)**: Widely supported and commonly used format for audio.
+- **OGG (audio/ogg)**: Open-source and supported by most modern browsers.
+
+## Additional Attributes
+- **`autoplay`**: Automatically starts playing the audio when the page loads.
+- **`loop`**: Repeats the audio indefinitely.
+- **`preload`**: Indicates how the browser should load the audio:
+  - `none`: Does not preload.
+  - `metadata`: Preloads only metadata.
+  - `auto`: Preloads the entire file.
+
+For more details, check the [MDN Web Docs on `<audio>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio).
+
+---
+
+# HTML `<iframe>` Tag for Embedding Videos
+
+The `<iframe>` tag in HTML is used to embed external content, such as videos, into a web page. It is commonly used for embedding YouTube videos.
+
+## Example of an Embedded YouTube Video
+
+```html
+<iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/hVYLszi_um0" 
+    title="YouTube video player" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+</iframe>
+```
+
+### Explanation of Attributes
+1. **`width` and `height`**: Specify the size of the embedded video in pixels.
+2. **`src`**: The URL of the content to be embedded. For YouTube videos, use the format `https://www.youtube.com/embed/VIDEO_ID`.
+3. **`title`**: Describes the content of the iframe. This is useful for accessibility.
+4. **`allow`**: Grants permissions for certain features, such as:
+   - `accelerometer`: Enables motion-based controls.
+   - `autoplay`: Allows the video to play automatically.
+   - `clipboard-write`: Allows copying to the clipboard.
+   - `encrypted-media`: Allows playback of encrypted media.
+   - `gyroscope`: Enables gyroscopic controls.
+   - `picture-in-picture`: Enables picture-in-picture mode.
+   - `web-share`: Allows the video to use the Web Share API.
+5. **`allowfullscreen`**: Enables fullscreen mode for the embedded content.
+
+## Key Benefits of Using `<iframe>`
+- Allows embedding dynamic content like videos, maps, or other web pages.
+- Ensures proper integration with external services like YouTube.
+
+For more details, check the [MDN Web Docs on `<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe).

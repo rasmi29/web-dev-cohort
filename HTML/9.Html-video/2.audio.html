@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <style>
+        .audio-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #cfc4c4;
+            border-radius: 8px;
+        }
+        .audio-title {
+            color: #333;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="audio-container">
+        <h2 class="audio-title">Audio Player of .mp3 file </h2>
+        <audio controls>
+            <!-- MP3 format -->
+            <source src="./music.mp3" type="audio/mp3">
+            
+            <!-- Fallback message if audio formats are not supported -->
+            Your browser does not support the audio element.
+        </audio>
+        <h2 class="audio-title">Audio Player of .ogg file </h2>
+        <audio controls>
+            
+            <!-- OGG format -->
+            <source src="./house-drumloop-4-89235.ogg" type="audio/ogg">
+            
+            <!-- Fallback message if audio formats are not supported -->
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</body>
+</html>
