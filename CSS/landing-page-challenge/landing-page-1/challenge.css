@@ -1,0 +1,160 @@
+/* Challenge CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-image: url('./assets/chaigym.png');
+
+}
+
+/* Navbar styles */
+.navbar {
+  /* Add styles for navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  background-color: #333333;
+  color: #fff;
+  position: absolute;
+  width: 100vw;
+  top: 0;
+
+}
+
+.logo {
+  /* Add styles for the logo */
+  font-size:2vw;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo img {
+  /* Add styles for logo image */
+  border-radius: 50%;
+}
+
+.nav-links a {
+  /* Add styles for nav links */
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  /* Add hover styles for nav links */
+  text-shadow: #FC0 1px 0 10px;
+}
+
+/* Hero section styles */
+.hero {
+  /* Add styles for hero section */
+  background-size:cover;
+  background-position: center;
+  margin-top: 9vh;
+  min-height: 91vh;
+  background: rgba(0, 0, 0, 0.7);
+
+  
+}
+
+.hero-content {
+  /* Add styles for hero content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6vh;
+
+  
+}
+
+.hero-content h1 {
+  /* Add styles for hero heading */
+  font-size: 3.7vw;
+  color: white;
+  margin-top: 1rem;
+  
+}
+.hero-content h1:hover{
+  text-shadow: rgb(195, 188, 162) 1px 0 10px;
+}
+
+.hero-content p {
+  /* Add styles for hero paragraph */
+  font-size: 1.5vw;
+  color: white;
+}
+
+.hero-content p:hover{
+  text-shadow: rgb(195, 188, 162) 1px 0 10px;
+}
+.cta-button {
+  /* Add styles for CTA button */
+  padding: 0.7rem 1.2rem;
+  background-color: #FF7902;
+  color: #333333;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  /* Add hover styles for CTA button */
+  background-color: #f6f6f6;
+  color: #FF7902;
+  
+}
+
+/* Features section styles */
+.features {
+  /* Add styles for features section */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vw;
+  justify-content: space-evenly;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin: 2rem 4rem;
+  border-radius: 3vw;
+}
+
+.feature {
+  /* Add styles for each feature block */
+  background-color: transparent;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin: 3rem 2rem;
+  
+  border:2px solid  #FF7902;
+  
+}
+.feature:hover {
+  /* Add hover styles for each feature block */
+  text-shadow: #FC0 1px 0 10px;
+
+  
+}
+
+.feature h3 {
+  /* Add styles for feature heading */
+  color: #FF7902;
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+}
+
+.feature p {
+  /* Add styles for feature paragraph */
+  font-size: 1rem;
+}
