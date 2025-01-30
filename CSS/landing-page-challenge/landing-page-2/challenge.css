@@ -6,73 +6,151 @@
 }
 
 body {
+  
   font-family: "Inter", sans-serif;
   line-height: 1.6;
+  
+  position: relative;
+  
+  
 }
 
 /* Navbar styles */
 .navbar {
   /* Add styles for the navbar */
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 4rem;
+  background-color: #333333;
+  color: #fff;
+  top: 0;
 }
 
 .logo {
   /* Add styles for the logo */
+  font-size:2vw;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #00FF9D;
+  ;
+
 }
 
 .logo img {
   /* Add styles for the logo image */
+  border-radius: 50%;
+  border: 2px solid #00FF9D;
+
 }
 
 .menu a {
   /* Add styles for the navigation links */
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
 }
 
 .menu a:hover {
   /* Add hover styles for navigation links */
+  text-shadow: #FC0 1px 0 10px;
+
 }
 
 /* Hero section styles */
 .hero {
   /* Add styles for the hero section */
+  background-image: url('./assets/chaicohort.png');
+  background-size: cover;
+  background-repeat: none;
+
 }
 
 .hero-content {
   /* Add styles for the hero content container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding-top:20vh;
+  gap: 1rem;
+  background: rgba(0, 0, 0, 0.65);
+  padding-bottom: 5rem;
 }
 
 .hero-content h1 {
   /* Add styles for the hero heading */
+  color: #00FF9D;
+  font-size: 3.7vw;
 }
 
 .hero-content p {
   /* Add styles for the hero paragraph */
+  font-size: 1.7vw;
 }
 
 .hero-content img {
   /* Add styles for the image in the hero section */
+  border: 2px solid #00FF9D;
+  border-radius: 10px;
+  margin-top: 1rem;
+
 }
 
 .enroll-button {
   /* Add styles for the enroll button */
+  background-color: #00FF9D;
+  padding: 1rem 2rem;
+  border-radius: 12rem;
+  border: none;
+  margin-top: 1rem;
+
 }
 
 .enroll-button:hover {
   /* Add hover styles for the enroll button */
+  background-color: #00FF9D;
+  color: #fff;
+  cursor: pointer;
+
 }
 
 /* Highlights section styles */
 .highlights {
   /* Add styles for the highlights section */
+  color: white;
+  background-color: #1A1A1A;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 4rem 0;
 }
 
 .highlight-card {
   /* Add styles for each highlight card */
+  background-color: #333333;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  max-width: 40vh;
 }
 
 .highlight-card h3 {
   /* Add styles for highlight card headings */
+  color: #00FF9D;
 }
 
 .highlight-card p {
   /* Add styles for highlight card paragraphs */
+  text-align: center;
 }
