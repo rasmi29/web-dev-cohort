@@ -9,7 +9,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f5f5f5;
+  background-color: #F5F5F5;
 }
 
 .container {
@@ -22,48 +22,124 @@ h1 {
 
 .pricing-heading {
   /* Add your styles here */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  font-size: 3rem;
 }
 
 .pricing-container {
   /* Add your styles here */
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1.2rem;
 }
 
 .pricing-card {
   /* Add your styles here */
+  max-width: 28%;
+  padding: 1.5rem 3rem;
+  background-color: #FFFFFF;
+  display: flex;
+
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #ffffff;
+  
+  
 }
 
 .pricing-card:hover {
   /* Add your styles here */
+  border: 3px solid #ff9533;
+  /* box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3); */
 }
 
 .pricing-card.popular {
   /* Add your styles here */
+  position: relative;
 }
 
 .popular-badge {
   /* Add your styles here */
+  position: absolute;
+  top: -5%;
+  left: 32%;
+  background-color: #FF9533;
+  color: #FFFFFF;
+  font-size:.8rem;
+  padding: .4rem 1.5rem;
+  border-radius: 25px;
 }
 
 .price {
   /* Add your styles here */
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom:.5rem;
+  color: #333333;
+  text-align: center;
+
 }
 
 .period {
   /* Add your styles here */
+  font-weight: bold;
+  margin-top:.5rem;
+  color: #333333;
+  font-size:.8rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .features {
   /* Add your styles here */
+  text-align: center;
+  
 }
 
-.features li {
+.features li::before {
   /* Add your styles here */
+  /* list-style-image: url('./assets'); */
+  /* this property does not let you resize the background image of list */
+  /* content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  background-image: url('./assets/chaicodelogo-small.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: .5rem;
+  background-position: center; */
 }
 
 .subscribe-btn {
   /* Add your styles here */
+  padding: .5rem 2.2rem;
+  background-color: #FF9533;
+  border-radius: 20px;
+  color: #111;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 .subscribe-btn:hover {
   /* Add your styles here */
+  background-color: #f6850d;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
 }
