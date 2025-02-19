@@ -1,0 +1,88 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #d6d6e7;
+}
+#main {
+  background-color: antiquewhite;
+  padding: 2vw;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#taskname {
+  position: relative;
+  cursor: text;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 16px;
+  height: 48px;
+  background-color: #fff;
+  border: 1px solid #d6d6e7;
+  border-radius: 14px;
+  color: rgb(35, 38, 59);
+  box-shadow: inset 0 1px 4px 0 rgb(119 122 175 / 30%);
+  overflow: hidden;
+  transition: all 100ms ease-in-out;
+  :focus {
+    border-color: #3c4fe0;
+    box-shadow: 0 1px 0 0 rgb(35 38 59 / 5%);
+  }
+}
+#add {
+  align-items: center;
+  background-color: #60c054;
+  border-radius: 14px;
+  border-style: none;
+  border: 1px solid #d6d6e7;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-size: 17px;
+  font-weight: 500;
+  height: 52px;
+  justify-content: center;
+  letter-spacing: 0.25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  margin-left: 3px;
+}
+.container{
+    padding: 25px;
+}
+
+#tasklist li{
+    font-size: 20px;
+    /* display: flex; */
+    gap: 15px;
+    padding: 3px;
+    list-style-type:decimal;
+
+}
+#tasklist button{
+    margin-left: 10px;
+    font-size: 14px;
+    border: none;
+    background-color: #d82f2f;
+    color: white;
+    border-radius: 7px;
+    padding: 3px 7px;
+}
+
+.tasks{
+    background-color: rgb(222, 202, 177);
+    padding: 5px;
+    border-radius: 20px;
+    margin-top: 20px;
+
+}
