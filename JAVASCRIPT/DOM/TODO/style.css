@@ -74,7 +74,7 @@ body {
   margin-left: 10px;
   font-size: 14px;
   border: none;
-  background-color: #d82f2f;
+  background-color: #c9c2c2;
   color: white;
   border-radius: 7px;
   padding: 3px 7px;
@@ -82,4 +82,19 @@ body {
 
 .tasks {
   margin-top: 20px;
+}
+#removeall{
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  background-color: #fa0b0b;
+  color: white;
+  border-radius: 7px;
+  padding: 4px 7px;
+  margin-top: 10px;
+}
+#rmall{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
